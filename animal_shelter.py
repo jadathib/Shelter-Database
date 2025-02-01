@@ -13,7 +13,7 @@ class AnimalShelter(object):
 # Complete this create method to implement the C in CRUD.
     def create(self, data):
         if data is not None:
-            self.database.animals.insert(data)
+            self.database.animals.insert_one(data)
             return True # data should be dictionary            
         else:
             raise Exception("Nothing to save, because data parameter is empty")
