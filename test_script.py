@@ -9,5 +9,5 @@ if shelter.create(data):  # Ensure create() returns True/False
 else:  # Fix indentation
     print("Error")
 
-# Print the value of the created record instead of using return
-print(shelter.data)
+# Print the value of the created record by reading it back from the database
+print(shelter.read(data))
